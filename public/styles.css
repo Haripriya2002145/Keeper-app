@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* html, body{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+} */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    
+    background-color: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    padding: 0 16px;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: white;
+    font-family: 'McLaren', cursive;
+    font-weight: 200;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 4;
+}
+
+footer p {
+    
+    text-align: center;
+    color: #ccc;
+}
+
+.note {
+    background-color: #fff;
+    width: 240px;
+    margin: 16px;
+    padding: 10px;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 7px;
+    float: left;
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.noteTitle{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    font-family: inherit;
+}
+
+.noteContent{
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: inherit;
+}
+
+.note button {
+    position: relative;
+    float: right;
+    margin-right: 1px;
+    color: #f5ba13;
+    background-color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+}
+
+.editButton{
+    font-size: larger;
+}
+
+form.create-note {
+    position: relative;
+    width: 480px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 30px auto 20px auto;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+form.create-note button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
+
+.warning{
+    text-shadow: 0.05px 0.05px red;
+    text-align: center;
+    font-family: inherit;
+    color: red;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {font-size: medium; font-weight: 400;}
+    100% {font-size: large; font-weight: 400;}
+}
